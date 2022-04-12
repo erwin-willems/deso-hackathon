@@ -1,3 +1,5 @@
+fasttext
+
 arrow==1.2.2
 arweave-python-client==1.0.18
 astroid==2.11.2
