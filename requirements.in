@@ -1,1 +1,5 @@
 requests
+base58
+ecdsa
+jwt
+arweave-python-client
