@@ -1,0 +1,9 @@
+-c requirements.txt
+
+# linting/testing
+autoflake
+flake8
+black==22.10.0
+isort
+pytest
+pylint
