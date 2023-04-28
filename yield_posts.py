@@ -33,13 +33,12 @@ def get_posts(num_to_fetch=10, last_post_hash=""):
 def yield_posts():
     last_post_hash = ""
     while True:
-        posts = get_posts(num_to_fetch=10, last_post_hash=last_post_hash)
+        posts = get_posts(num_to_fetch=1000, last_post_hash=last_post_hash)
         for post in posts:
             yield post
             last_post_hash = post['PostHashHex']
 
 if __name__ == "__main__":
-    my_posts = get_posts()
     for my_post in yield_posts():
         print("----------------------------")
         print(my_post["Body"])
